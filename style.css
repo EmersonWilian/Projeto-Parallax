@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body, html{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #777;
+    height: 100%; /*Isso é truque do parallax, pois se eu tirar o height ele n vai ocupar 100% da tela*/
+    /* border: 1px solid blue; */
+
+}
+
+.conteudo{
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+
+}
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+p{
+    margin-bottom: 20px;
+}
+
+/* ================================== Efeito Parallax ================================== */
+.caixa1, .caixa2, .caixa3{
+    position: relative;
+    border: 1px solid blue;
+    height: 100%;
+    opacity: 0.65; /*Aplicando opacidade na imagem*/   
+}
+.caixa1{
+    background: url(imagens/7c7z9abdxp51ismxa89bn9cts.jpg);
+    background-size: cover;
+    background-position: center; /*centraliza a imagem no centro para caso o usuario diminua a tela*/ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+.caixa2{
+    background: url(imagens/Lamborghini-Avendator-SV-main.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center; /*centraliza a imagem no centro para caso o usuario diminua a tela*/ 
+    background-attachment: fixed;
+}
+.caixa3{
+    background: url(imagens/Lamborghini_Huracan_2017_Performante_Grey_577860_1280x720.jpg);
+    background-size: cover; /*Serve para esticar a imagem para apresentar a tela inteira*/
+    background-repeat: no-repeat;
+    background-position: center; /*centraliza a imagem no centro para caso o usuario diminua a tela*/ 
+    background-attachment: fixed;
+}
+
+/* ================================== Fim do efeito Parallax ================================== */
+
+.conteudo-titulo{
+    position: absolute;
+    width: 100%;
+    left: 0; 
+    top: 45%;
+    /* background: red; */
+    text-align: center;     /*O span foi criado para que pudessemos colocar o titulo bem no centro do site*/
+
+}
+.conteudo-titulo span.titulo{   /*O span foi criado para que pudessemos colocar o titulo bem no centro do site*/
+    color: white;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
